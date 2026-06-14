@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
-  Replyo — one-page marketing site for a customer-support chat aggregator (SaaS).
-  Product name is "Replyo" (search/replace this token to rename).
+  Milorium Agregator — one-page marketing site for a customer-support chat aggregator (SaaS).
+  Product name is "Milorium Agregator" (search/replace this token to rename).
   Fully static: HTML + inline CSS, renders without JavaScript. No backend, no
   external dependencies. Company details in the Contact section and footer are
   the real legal data and must stay exactly as written.
@@ -10,13 +10,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Replyo — One inbox for all your customer chats</title>
-  <meta name="description" content="Replyo is a customer-support chat aggregator that unifies Facebook Messenger, Instagram Direct, WhatsApp, Telegram and more into a single shared inbox, with built-in review and feedback management for small and medium businesses." />
-  <meta name="theme-color" content="#4f46e5" />
-  <meta property="og:title" content="Replyo — One inbox for all your customer chats" />
+  <title>Milorium Agregator — One inbox for all your customer chats</title>
+  <meta name="description" content="Milorium Agregator is a customer-support chat aggregator that unifies Facebook Messenger, Instagram Direct, WhatsApp, Telegram and more into a single shared inbox, with built-in review and feedback management for small and medium businesses." />
+  <meta name="theme-color" content="#2c66c4" />
+  <meta property="og:title" content="Milorium Agregator — One inbox for all your customer chats" />
   <meta property="og:description" content="Unify every messaging channel into one shared inbox and manage customer reviews and requests in a single place." />
   <meta property="og:type" content="website" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234f46e5'/%3E%3Cpath d='M9 11h14a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-7l-4 3v-3H9a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2z' fill='white'/%3E%3C/svg%3E" />
+  <link rel="icon" type="image/svg+xml" href="icon.svg" />
+  <link rel="apple-touch-icon" href="icon.svg" />
+  <meta property="og:image" content="icon.svg" />
   <style>
     :root {
       --bg: #ffffff;
@@ -25,9 +27,9 @@
       --ink-soft: #475569;
       --muted: #64748b;
       --line: #e7e9ef;
-      --brand: #4f46e5;
-      --brand-dark: #4338ca;
-      --brand-soft: #eef0ff;
+      --brand: #2c66c4;
+      --brand-dark: #1e4fa3;
+      --brand-soft: #eaf1fb;
       --radius: 16px;
       --shadow: 0 1px 2px rgba(15,23,42,.04), 0 12px 32px rgba(15,23,42,.06);
     }
@@ -60,9 +62,9 @@
       border-bottom: 1px solid var(--line);
     }
     .nav { display: flex; align-items: center; justify-content: space-between; height: 68px; }
-    .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 20px; letter-spacing: -.01em; }
-    .brand .mark { width: 30px; height: 30px; border-radius: 9px; background: var(--brand); display: grid; place-items: center; }
-    .brand .mark svg { width: 18px; height: 18px; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 19px; letter-spacing: -.015em; }
+    .brand .mark-img { width: 34px; height: 34px; border-radius: 9px; display: block; box-shadow: 0 2px 8px rgba(16,42,84,.22); }
+    @media (max-width: 600px) { .brand { font-size: 16.5px; gap: 8px; } .brand .mark-img { width: 30px; height: 30px; } }
     .nav-links { display: flex; align-items: center; gap: 30px; }
     .nav-links a.lnk { color: var(--ink-soft); font-weight: 500; font-size: 15px; }
     .nav-links a.lnk:hover { color: var(--ink); }
@@ -140,11 +142,9 @@
 
   <header>
     <div class="wrap nav">
-      <a class="brand" href="#top" aria-label="Replyo home">
-        <span class="mark">
-          <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M9 11h14a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-7l-4 3v-3H9a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2z" fill="#fff"/></svg>
-        </span>
-        Replyo
+      <a class="brand" href="#top" aria-label="Milorium Agregator home">
+        <img class="mark-img" src="icon.svg" alt="" width="34" height="34" />
+        Milorium Agregator
       </a>
       <nav class="nav-links" aria-label="Primary">
         <a class="lnk" href="#features">Features</a>
@@ -165,7 +165,7 @@
       <div class="wrap hero-inner">
         <span class="eyebrow">Customer support, unified</span>
         <h1>One inbox for every customer chat</h1>
-        <p class="lead">Replyo brings Facebook Messenger, Instagram Direct, WhatsApp, Telegram and more into a single shared inbox — and turns scattered reviews and requests into organized, trackable conversations your whole team can handle in one place.</p>
+        <p class="lead">Milorium Agregator brings Facebook Messenger, Instagram Direct, WhatsApp, Telegram and more into a single shared inbox — and turns scattered reviews and requests into organized, trackable conversations your whole team can handle in one place.</p>
         <div class="cta-row">
           <a class="btn btn-primary" href="#contact">Get started</a>
           <a class="btn btn-ghost" href="#features">See features</a>
@@ -187,13 +187,13 @@
         <div class="section-head">
           <span class="eyebrow">Features</span>
           <h2>Everything support needs, in one place</h2>
-          <p>Stop switching between apps and tabs. Replyo centralizes conversations, feedback and teamwork so nothing falls through the cracks.</p>
+          <p>Stop switching between apps and tabs. Milorium Agregator centralizes conversations, feedback and teamwork so nothing falls through the cracks.</p>
         </div>
         <div class="grid">
           <div class="card">
             <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg></div>
             <h3>Unified inbox</h3>
-            <p>Every message from every channel lands in one shared inbox, so your team reads and replies without ever leaving Replyo.</p>
+            <p>Every message from every channel lands in one shared inbox, so your team reads and replies without ever leaving Milorium Agregator.</p>
           </div>
           <div class="card">
             <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49M7.76 16.24a6 6 0 0 1 0-8.49M19.07 4.93a10 10 0 0 1 0 14.14M4.93 19.07a10 10 0 0 1 0-14.14"/></svg></div>
@@ -236,7 +236,7 @@
           <div class="step">
             <div class="num">1</div>
             <h3>Connect your channels</h3>
-            <p>Link your Messenger, Instagram, WhatsApp, Telegram and Viber accounts to a single Replyo workspace.</p>
+            <p>Link your Messenger, Instagram, WhatsApp, Telegram and Viber accounts to a single Milorium Agregator workspace.</p>
           </div>
           <div class="step">
             <div class="num">2</div>
@@ -257,7 +257,7 @@
       <div class="wrap about-inner">
         <span class="eyebrow">About us</span>
         <h2 style="font-size:32px;letter-spacing:-.02em;font-weight:800;margin-top:10px;">A focused tool for real customer conversations</h2>
-        <p>Replyo is an independent software product built and operated in Ukraine. We help small and medium businesses keep up with customers who reach out across many messengers, without drowning in separate apps and missed messages.</p>
+        <p>Milorium Agregator is an independent software product built and operated in Ukraine. We help small and medium businesses keep up with customers who reach out across many messengers, without drowning in separate apps and missed messages.</p>
         <p>Our goal is simple: make customer support fast, organized and human — one shared inbox, clear ownership, and every review and request handled to the end.</p>
       </div>
     </section>
@@ -268,7 +268,7 @@
         <div>
           <span class="eyebrow">Contact</span>
           <h2>Get in touch</h2>
-          <p class="sub">Have a question about Replyo or want to get started? Reach out directly — we read every message.</p>
+          <p class="sub">Have a question about Milorium Agregator or want to get started? Reach out directly — we read every message.</p>
           <div style="margin-top:24px;">
             <a class="btn btn-primary" href="mailto:kosmov.official@gmail.com">Email us</a>
           </div>
@@ -311,7 +311,7 @@
   <footer>
     <div class="wrap foot">
       <div class="legal">
-        © <span id="year">2026</span> Replyo · <strong>ФОП Мовчановський Костянтин Едуардович</strong>. All rights reserved.
+        © <span id="year">2026</span> Milorium Agregator · <strong>ФОП Мовчановський Костянтин Едуардович</strong>. All rights reserved.
       </div>
       <nav class="foot-links" aria-label="Footer">
         <a href="#features">Features</a>
