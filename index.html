@@ -85,6 +85,20 @@
     .chip { font-size: 13.5px; font-weight: 600; color: var(--ink-soft); background: #fff; border: 1px solid var(--line); padding: 8px 15px; border-radius: 999px; box-shadow: var(--shadow); }
     @media (max-width: 600px) { .hero h1 { font-size: 36px; } .hero { padding: 56px 0 48px; } }
 
+    /* Product showcase */
+    .showcase { background: var(--bg); }
+    .shot { border-radius: 14px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 24px 60px rgba(16,42,84,.14); background: #fff; }
+    .shot .bar { display: flex; align-items: center; gap: 7px; padding: 11px 14px; background: #f3f5f8; border-bottom: 1px solid var(--line); }
+    .shot .bar i { width: 11px; height: 11px; border-radius: 50%; display: block; }
+    .shot .bar .addr { margin-left: 10px; font-size: 12px; color: var(--muted); background: #fff; border: 1px solid var(--line); border-radius: 7px; padding: 4px 12px; max-width: 70%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .shot img { display: block; width: 100%; height: auto; }
+    .shot-feature { max-width: 960px; margin: 0 auto; }
+    .shot-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; max-width: 960px; margin: 36px auto 0; }
+    @media (max-width: 760px) { .shot-grid { grid-template-columns: 1fr; } }
+    .shot-cap { text-align: center; margin: 16px auto 0; max-width: 460px; }
+    .shot-cap h3 { font-size: 16.5px; font-weight: 700; }
+    .shot-cap p { color: var(--ink-soft); font-size: 14.5px; margin-top: 5px; }
+
     /* Sections */
     section { padding: 72px 0; }
     .section-head { max-width: 640px; margin: 0 auto 48px; text-align: center; }
@@ -147,6 +161,7 @@
         Milorium Agregator
       </a>
       <nav class="nav-links" aria-label="Primary">
+        <a class="lnk" href="#product">Product</a>
         <a class="lnk" href="#features">Features</a>
         <a class="lnk" href="#how">How it works</a>
         <a class="lnk" href="#about">About</a>
@@ -177,6 +192,47 @@
           <span class="chip">WhatsApp</span>
           <span class="chip">Telegram</span>
           <span class="chip">Viber</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product showcase -->
+    <section class="showcase" id="product">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">See it in action</span>
+          <h2>The whole conversation, in one workspace</h2>
+          <p>A unified inbox, structured request handling and clear analytics — here's what your team actually works in.</p>
+        </div>
+        <figure class="shot shot-feature">
+          <div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="addr">Milorium Agregator — Unified inbox</span></div>
+          <img src="shot-inbox.jpg" alt="Unified inbox showing a customer conversation from Instagram alongside the customer profile and request history" loading="lazy" width="1500" height="920" />
+        </figure>
+        <div class="shot-cap">
+          <h3>One shared inbox</h3>
+          <p>Read and reply across Instagram, Telegram, Messenger and more — without leaving the app — with the full customer context beside every chat.</p>
+        </div>
+        <div class="shot-grid">
+          <div>
+            <figure class="shot">
+              <div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="addr">Request handling</span></div>
+              <img src="shot-ticket.jpg" alt="A customer request shown as a structured case with priority, SLA timer and processing stages" loading="lazy" width="1500" height="921" />
+            </figure>
+            <div class="shot-cap">
+              <h3>Structured requests</h3>
+              <p>Every review or complaint becomes a trackable case with priority, SLA and a clear status.</p>
+            </div>
+          </div>
+          <div>
+            <figure class="shot">
+              <div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="addr">Analytics</span></div>
+              <img src="shot-analytics.jpg" alt="Analytics dashboard with daily volume, channel split, hourly load and team activity charts" loading="lazy" width="1500" height="684" />
+            </figure>
+            <div class="shot-cap">
+              <h3>Built-in analytics</h3>
+              <p>Track response times, volume by channel and your busiest hours at a glance.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
